@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  @import "tailwindcss/preflight";
+
+  body {
+    @apply bg-white text-gray-900 font-sans antialiased;
+  }
+
+  a {
+    @apply text-gray-700 no-underline hover:text-blue-600 transition;
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-xl px-5 py-2 font-medium transition;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+  }
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 hover:bg-gray-50;
+  }
+  .link {
+    @apply text-blue-600 hover:text-blue-700 underline-offset-4 hover:underline;
+  }
+}
